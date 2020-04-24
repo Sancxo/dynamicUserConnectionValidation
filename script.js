@@ -7,7 +7,7 @@ const passwordIsValid = document.getElementById('passwordIsValid');
 
 const connectButton = document.getElementById('connectButton');
 
-const emailCheck = email.addEventListener('change', function (e) {
+email.addEventListener('change', function (e) {
     const value = e.target.value;
     if (value.includes('@') && value.includes('.')) {
         emailIsValid.setAttribute('style', 'color:green');
@@ -19,7 +19,7 @@ const emailCheck = email.addEventListener('change', function (e) {
     };
 });
 
-var passwordCheck = password.addEventListener('change', function (e) {
+password.addEventListener('change', function (e) {
     const value = e.target.value;
     if (value.includes('-') || value.includes('_')) {
         passwordIsValid.setAttribute('style', 'color:green');
