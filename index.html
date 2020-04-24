@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Connection</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <label for="email">
+        Your email:
+        <input type="email" name="Email" id="email" required
+                placeholder=" ex: nerd@easteregg.com" />
+        <span class="star">*</span>
+    </label>
+    <div id="emailIsValid">An email adress should contain an "@" and at least one dot.</div>
+
+    <br />
+
+    <label for="password">
+        Your password:
+        <input type="password" name="Password" id="password" required
+                placeholder=" ex: thisIsNotAPassword_42" disabled />
+        <span class="star">*</span>
+    </label>
+    <div id="passwordIsValid">Your password should contain at least one special character as "-" or "_".</div>
+
+    <br />
+
+    <p><span class="star">*</span> elements required</p>
+
+
+    <button id="connectButton" disabled>Connect</button>
+    <p id="test"></p>
+    <script type="text/javascript" src="script.js"></script>
+
+</body>
+</html>
